@@ -1,0 +1,97 @@
+.form{
+    position: relative;
+    width: 100%;
+    top: 70px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__conteiner{
+    background-color: red;
+    position:relative;
+    width: 480px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    position: relative;
+    width: 250px;
+}
+
+.form-control{
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 9px 10px;
+    font-size: 14px;
+    width: 228px
+
+}
+label{
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    font-size: 14px;
+    cursor: text;
+    background-color: #fff;
+}
+
+.form-control:focus{
+    outline: none;
+    border-color: coral;
+    box-shadow: 0 0 3px rgba(255, 127, 80, .5);
+}
+
+.form-control:focus ~ label{
+    top: -9px;
+    color: coral;
+    font-size: 12px;
+}
+
+.form-control:valid ~ label{
+    top: -9px;
+    font-size: 12px;
+}
+
+.btn-form{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #fff;
+    background-color: coral;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-form:hover{
+    background-color: rgb(255, 84, 21);
+}
+
+.btn-form:active{
+    background-color: rgb(255, 127, 81);
+}
+
+.text-center{
+    text-align: center;
+    width: 250px;
+}
+
+.form__wraper{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
