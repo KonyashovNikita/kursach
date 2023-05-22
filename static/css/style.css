@@ -1,6 +1,6 @@
 
-@import url('./static/css/pages/main.css');
-@import url('./static/css/components/form.css');
+@import '/static/css/pages/main.css';
+@import '/static/css/components/form.css';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
