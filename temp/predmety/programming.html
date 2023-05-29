@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursach</title>
+    <link type="Image/x-icon" href="../../static/icons/icon_r3T_icon.ico" rel="icon">
+
+    
+    <script src="../../static/script/jquery-3.7.0.min.js"></script>
+    <script src="../../static/slick/slick.min.js"></script>
+    
+    <link rel="stylesheet" href="../../static/slick/slick.css">
+    <link rel="stylesheet" href="../../static/slick/slick-theme.css">
+    
+    <script src="../../static/script/script.js"></script>
+    <script src="../../static/script/slick.js"></script>
+    
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/font.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__conteiner conteiner">
+            <a href="../../index.html" class="navbar-brand">KURSACH</a>
+            <div class="navbar__burger">
+                <span></span>
+            </div>
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="../predmety.html" id="predmety">Предметы</a>
+                        <ul id="pred_popup">
+                            <li><a href="./math.html">Математика</a></li>
+                            <li><a href="./physic.html">Физика</a></li>
+                            <li><a href="./programming.html">Программирование</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../aboutus.html" id="aboutus">О нас</a></li>
+                    <li><a href="../contacts.html" id="contacts">Контакты</a></li>
+                </ul>
+
+                <!-- <a href="/forma.html" class="callback">Обратный звонок</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="predmet-prog predmet">
+        <div class="predmet-prog__conteiner predmet__conteiner">
+            <h2>Примеры выполнения работ по информатике</h2>
+            <div class="slik-slider">
+                <div class="slide__primer">
+                    <h2>Пример выполнения 1</h2>
+                    <p>Описание примера выполнения 1</p>
+                    <a href="#" class="href">Узнать подробнее</a>
+                </div>
+                <div class="slide__primer">
+                    <h2>Пример выполнения 2</h2>
+                    <p>Описание примера выполнения 2</p>
+                    <a href="#" class="href">Узнать подробнее</a>
+                </div>
+                <div class="slide__primer">
+                    <h2>Пример выполнения 3</h2>
+                    <p>описание примера выполнения 3</p>
+                    <a href="#" class="href">Узнать подробнее</a>
+                </div>
+            </div>
+            <div class="predmet__content">
+                <div class="form__wraper">
+                    <h2>Заказать работу по информатике</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" required>
+                            <label for="name">Имя</label>
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="text" id="email" class="form-control" required>
+                            <label for="email">Telegram</label>
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="text" id="addres" class="form-control" required>
+                            <label for="addres">Примерное описание работы</label>
+                        </div>
+    
+                        <div class="text-center">
+                            <button class="btn-form" type="submit">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="table__wrap">
+                    <h2>Цены</h2>
+                    <table>
+                        <tr>
+                            <td>Дипломная работа</td>
+                            <td>от 3000р</td>
+                        </tr>
+                        <tr>
+                            <td>Курсовая работа</td>
+                            <td>от 2000р</td>
+                        </tr>
+                        <tr>
+                            <td>Лабороторная работа</td>
+                            <td>от 1000р</td>
+                        </tr>
+                        <tr>
+                            <td>Контрольная работа</td>
+                            <td>от 700р</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="add">
+        <div class="close"></div>
+        <div class="content">
+            <span>Здесь могла быть ваша реклама</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__conteiner conteiner">
+            <div class="footer__contacts">
+                <h2>Контакты</h2>
+                <a href="tel:88005553535" class="fa-solid fa-phone-volume">8 800 555 35 35</a>
+                <a class="fa-brands fa-telegram" href="https://t.me/KonyashovN">@KonyashovN</a>
+                <a class="fa-brands fa-vk" href="https://vk.com/id591023568">KonyashovN</a>
+                <a href="konyashov.nikita@gmail.com" class="fa-solid fa-envelope">konyashov.nikita@gmail.com</a>
+            </div>
+            <div class="map__site">
+                <h2 class="title">Карта сайта</h2>
+                <ul class="map">
+                    <li><a href="../../index.html" class="map-link">Главная</a></li>
+                    <li><a href="../predmety.html" class="map-link">Предметы</a>
+                        <ul>
+                            <li><a href="./math.html" class="map-link">Математика</a></li>
+                            <li><a href="./physic.html" class="map-link">Физика</a></li>
+                            <li><a href="./programming.html" class="map-link">Информатика</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../aboutus.html" class="map-link">О нас</a></li>
+                    <li><a href="../contacts.html" class="map-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

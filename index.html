@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kursach</title>
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/font.css">
+    <link type="Image/x-icon" href="./static/icons/icon_r3T_icon.ico" rel="icon">
+    <script src="./static/script/script.js"></script>
 </head>
 <body>
 
@@ -17,10 +20,15 @@
             </div>
             <div class="navbar-wrap">
                 <ul class="navbar-menu">
-                    <li><a href="./aboutus.html">О нас</a></li>
-                    <li><a href="#">Предметы</a></li>
-                    <li><a href="#">Цены</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="./temp/predmety.html" id="predmety">Предметы</a>
+                        <ul id="pred_popup">
+                            <li><a href="./temp/predmety/math.html">Математика</a></li>
+                            <li><a href="./temp/predmety/physic.html">Физика</a></li>
+                            <li><a href="./temp/predmety/programming.html">Программирование</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./temp/aboutus.html" id="aboutus">О нас</a></li>
+                    <li><a href="./temp/contacts.html" id="contacts">Контакты</a></li>
                 </ul>
 
                 <!-- <a href="/forma.html" class="callback">Обратный звонок</a> -->
@@ -30,7 +38,8 @@
 
 
     <div class="hero-info">
-        <img src="https://placehold.it/1600x1200" alt="book" class="image">
+        <img src="./static/pictures/board.jpg" alt="book" class="image">
+        <div class="overlay"></div>
         <div class="hero-info__conteiner conteiner">
             
             <div class="hero-info__wrap">
@@ -43,27 +52,35 @@
 
     <div class="page1">
         <div class="page1__conteiner conteiner">
-            <div class="page1-image">
+            <div class="page1__image">
                 <img src="./static/pictures/woman-library.jpg" alt="">
             </div>
 
-            <div class="page1-content">
-                <h2>Некогда учится или тебя это заебало?</h1>
-                <p class="">Тогда иди к нам! У нас всегда найдется время,
-                    чтобы помочь тебе с твоими студенческими работами. Твоя главная задача
-                     - просто заплатить нам денег. Схема максимально простая: ты нам деньги,
-                    мы готовую работу и полную ответственность за её качество. Если возникнут вопросы на защите,
-                    то мы всегда готовы помочь без лишней доплаты.
+            <div class="page1-content"> 
+                <h2>Устал от учебы или на это просто нет времени?</h2>
+                <p id="text1" lang="ru">Тогда тебе к нам! Мы - команда профессионалов, у которых всегда найдётся время, чтобы тебе помочь. Мы делаем любые студенческие работы, за максимально короткий срок. А если с ними возникают проблемы, то решаем их без дополнительной платы.  
                 </p>
-                <button>hhhh</button>       
             </div>
         </div>
     </div>
 
     <div class="page2">
         <div class="page2__conteiner conteiner">
-
+            <div class="page2__content">
+                <h2>Предметы на нашей площадке</h2>
+                <p>На нашей площадке ты найдёшь всевозможные предметы, к которым мы выполняем всевозможные студенческие работы. Ты можешь ознокомится с примерами выполнения работ наших преподавателей, и заказать по соответвсующему предмету свою работу.</p>
+                <a href="./temp/predmety.html" class="href">Ознокомится подробнее</a>
+            </div>
+            <div class="page2__image">
+                <img src="./static/pictures/knigas.jpg" alt="" class="image">
+            </div>
         </div>
+    </div>
+
+    <div class="arrow_up">
+        <a href="#">
+            <img src="./static/pictures/arrow_up.jpg" alt="">
+        </a>
     </div>
 
     <div class="add">
@@ -75,9 +92,29 @@
 
     <footer class="footer">
         <div class="footer__conteiner conteiner">
-            
+            <div class="footer__contacts">
+                <h2>Контакты</h2>
+                <a href="tel:88005553535" class="fa-solid fa-phone-volume">8 800 555 35 35</a>
+                <a class="fa-brands fa-telegram" href="https://t.me/KonyashovN">@KonyashovN</a>
+                <a class="fa-brands fa-vk" href="https://vk.com/id591023568">KonyashovN</a>
+                <a href="konyashov.nikita@gmail.com" class="fa-solid fa-envelope">konyashov.nikita@gmail.com</a>
+            </div>
+            <div class="map__site">
+                <h2 class="title">Карта сайта</h2>
+                <ul class="map">
+                    <li><a href="./index.html" class="map-link">Главная</a></li>
+                    <li><a href="./temp/predmety.html" class="map-link">Предметы</a>
+                        <ul>
+                            <li><a href="./temp/predmety/math.html" class="map-link">Математика</a></li>
+                            <li><a href="./temp/predmety/physic.html" class="map-link">Физика</a></li>
+                            <li><a href="./temp/predmety/programming.html" class="map-link">Информатика</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./temp/aboutus.html" class="map-link">О нас</a></li>
+                    <li><a href="./temp/contacts.html" class="map-link">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-    <script text="" src="./static/script/script.js"></script>
 </body>
 </html>

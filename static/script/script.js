@@ -16,7 +16,21 @@ ready(() => {
 
         setTimeout(() => {
             add.style.display = "block";
-        }, 2000);
+        }, 20000);
 
     });
+
+    let burger = document.querySelector(".navbar__burger");
+    let menu = document.querySelector(".navbar-wrap");
+
+    burger.addEventListener("click", (e) =>{
+        menu.classList.toggle("active");
+        burger.classList.toggle("active");
+        document.body.classList.toggle("_lock");
+    });
+
+    let predmety = document.querySelector("#predmety");
+    let aboutus = document.querySelector("#aboutus");
+    let contacts = document.querySelector("#contacts");
+    let popup = document.querySelector("#pred_popup");
 });
